@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     checkCount() {
-      this.count = this.count + 10
+      this.count = this.count + 100
       if (this.count >= 100 && this.count < 10000) {
         this.title = 'เป็นเกย์แล้ว ลองกดอีก 10,000 ครั้งเพื่อกลับเป็นชาย'
       }
