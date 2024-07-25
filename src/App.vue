@@ -2,7 +2,7 @@
   <div>
     <h1>{{ title }}</h1>
     <h2>{{ count }}</h2>
-    <button @click="checkCount">Click me</button>
+    <button @click="checkCount">Click me Pls</button>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     checkCount() {
-      this.count++
+      this.count = this.count + 10
       if (this.count >= 100 && this.count < 10000) {
         this.title = 'เป็นเกย์แล้ว ลองกดอีก 10,000 ครั้งเพื่อกลับเป็นชาย'
       }
