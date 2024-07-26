@@ -1,4 +1,5 @@
 <template>
+  <Header></Header>
   <div>
     <h1>{{ title }}</h1>
     <h2>{{ count }}</h2>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+import Header from './components/Header.vue';
 export default {
   name: 'Main',
+  components: {
+    Header
+  },
   data() {
     return {
       title: 'ตอนนี้มึงเป็นเกย์ Click 100 ครั้งเพื่อกลับเป็นชายแท้',
